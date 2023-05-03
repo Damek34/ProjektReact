@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.menu {
+  padding-inline: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.menuA {
+  color: #282c34;
+  font-size: 24px;
+  text-decoration: none;
+  
+}
