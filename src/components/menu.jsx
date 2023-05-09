@@ -1,17 +1,18 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route, Router, Routes, Link } from 'react-router-dom';
 import MenuItem from './MenuItem';
 
 export default function Menu(){
     const arr = [
-        {name: "Glówna", link: 'glowna.html'},
-        {name: "Opinie", link: 'opinie.html'},
-        {name: "Szukaj", link: 'szukaj.html'},
-        {name: "Konto", link: 'konto.html'}
+        {name: "Główna"},
+        {name: "Opinie"},
+        {name: "Szukaj"},
+        {name: "Konto"}
     ]
     return (
     <div className='menu'>
       {arr.map((link) => (
-        <MenuItem name={link.name} link={link.link}/>
+        <MenuItem name={link.name}/>
       ))}
     </div>
   );
