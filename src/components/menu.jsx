@@ -4,15 +4,15 @@ import MenuItem from './MenuItem';
 
 export default function Menu(){
     const arr = [
-        {name: "Główna"},
-        {name: "Opinie"},
-        {name: "Szukaj"},
-        {name: "Konto"}
+        {name: "Główna", URL: "Glowna"},
+        {name: "Opinie", URL: "Opinie"},
+        {name: "Szukaj", URL: "Szukaj"},
+        {name: "Konto", URL: "Konto"}
     ]
     return (
     <div className='menu'>
       {arr.map((link) => (
-        <MenuItem name={link.name}/>
+        <MenuItem name={link.name} link={link.URL}/>
       ))}
     </div>
   );

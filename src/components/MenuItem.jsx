@@ -7,7 +7,7 @@ export default function MenuItem({name, link}){
 
     return (
     <div className="menu">
-        <Link to={link} className="menuA">{name}</Link>
+        <Link to={link2} className="menuA">{name2}</Link>
     </div>
     );
 }
