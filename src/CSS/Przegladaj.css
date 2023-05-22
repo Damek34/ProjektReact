@@ -1,0 +1,15 @@
+.Opinia{
+    clear: both;
+    background-color: aqua;
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.Opinia li {
+    margin-bottom: 10px; /* Dodaj margines dolny 10px */
+  }

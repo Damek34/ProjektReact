@@ -5,8 +5,8 @@ import MenuItem from './MenuItem';
 export default function Menu(){
     const arr = [
         {name: "Główna", URL: "Glowna"},
-        {name: "Opinie", URL: "Opinie"},
-        {name: "Szukaj", URL: "Szukaj"},
+        {name: "Dodaj", URL: "Dodaj"},
+        {name: "Przeglądaj", URL: "Przegladaj"},
         {name: "Konto", URL: "Konto"}
     ]
     return (

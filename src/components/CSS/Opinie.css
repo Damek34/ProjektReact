@@ -1,0 +1,21 @@
+.OpinieMain{
+    clear: both;
+    background-color: aqua;
+    width: 35%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.Formularz{
+    clear: both;
+    background-color: aqua;
+    width: 35%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
