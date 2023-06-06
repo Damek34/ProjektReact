@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Switch, Route, Router, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Router, Routes, Link, redirect  } from 'react-router-dom';
 import Glowna from './pages/Glowna';
 import Opinie from './pages/Opinie';
 import Szukaj from './pages/Szukaj';
@@ -9,7 +9,9 @@ import Layout from './pages/layout';
 function App() {
   
   return (
-   
+
+    
+    
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -19,7 +21,10 @@ function App() {
         <Route path="Konto" element={<Konto/>}/>
       </Route>
     </Routes>
+    
   </BrowserRouter>
+    
+
   );
 }
 

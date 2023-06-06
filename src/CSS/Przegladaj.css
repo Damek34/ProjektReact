@@ -1,15 +1,26 @@
 .Opinia{
     clear: both;
     background-color: aqua;
-    width: 35%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-top: 10px;
+    border-radius: 5px;
     
 }
 
 .Opinia li {
-    margin-bottom: 10px; /* Dodaj margines dolny 10px */
-  }
+    margin-bottom: 10px;
+}
+
+.tresc{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.wyszukaj{
+    margin-top: 10px;
+    align-self: center;
+    width: 50%;
+    border-radius: 5px;
+}
+

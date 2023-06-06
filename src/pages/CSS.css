@@ -1,0 +1,32 @@
+.stopka{
+     width: 99%;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+
+     
+     
+     
+    
+}
+
+.stopka hr{
+    width: 99%;
+    border: 1px solid rgb(51, 47, 47);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+h4{
+    color: antiquewhite;
+}
+
+.glownaKontener{
+    margin-top: 10px;
+    background-color: rgb(168, 159, 159);
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    border-radius: 5px;
+}

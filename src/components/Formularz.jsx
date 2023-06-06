@@ -25,19 +25,21 @@ export default function Formularz(){
     const handleFormSubmit = (event) => {
       event.preventDefault();
       
-      // Utwórz obiekt reprezentujący recenzję
       const newReview = {
         title: title,
         rating: rating,
         review: review
       };
       
-      // Dodaj recenzję do listy w localStorage
+      if (!title || !review || !rating) {
+        alert('Proszę wypełnić wszystkie pola formularza.');
+        return;
+      }
+      
       const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
       reviews.push(newReview);
       localStorage.setItem('reviews', JSON.stringify(reviews));
       
-      // Wyczyść pola formularza po dodaniu recenzji
       setTitle('');
       setRating('');
       setReview('');
@@ -46,18 +48,19 @@ export default function Formularz(){
     return (
       <form onSubmit={handleFormSubmit} className='Formularz'>
         <label>
-          Tytuł:
+          <p>Tytuł:</p>
           <input type="text" value={title} onChange={handleTitleChange} />
         </label>
         <br />
         <label>
-          Ocena:
-          <input type="number" value={rating} onChange={handleRatingChange} />
+          <p>Opinia:</p>
+          <textarea value={review} onChange={handleReviewChange} />
         </label>
         <br />
         <label>
-          Opinia:
-          <textarea value={review} onChange={handleReviewChange} />
+        <p>Ocena:</p>
+          <input type="number" value={rating} min="1" max="10" onChange={handleRatingChange} />
+          
         </label>
         <br />
         <button type="submit">Dodaj recenzję</button>
