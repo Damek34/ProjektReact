@@ -1,5 +1,18 @@
+import OpinieC from "../components/Opinie"
+import Formularz from "../components/Formularz"
+
 function Opinie() {
-    return <h1>Strona Opinie</h1>;
-  }
+  const obsluzNowyElement = (nowyElement) => {
+    // Tu możesz wykonać dowolną logikę, na przykład dodanie nowego elementu do tablicy
+    console.log(nowyElement);
+  };
+    return (
+      
+      <Formularz></Formularz>
+      
+      
+  );
+       
+  };
   
   export default Opinie;
