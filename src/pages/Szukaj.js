@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
-import '../CSS/Przegladaj.css';
+import './CSS/Przegladaj.css';
 
 function Szukaj() {
   const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
   const [searchKeyword, setSearchKeyword] = useState('');
+  const [likedReviews, setLikedReviews] = useState([]);
 
   const handleSearch = (e) => {
     setSearchKeyword(e.target.value);
+  };
+
+  const handleLike = (index) => {
+    const updatedLikedReviews = [...likedReviews];
+    updatedLikedReviews[index] = !likedReviews[index];
+    setLikedReviews(updatedLikedReviews);
   };
 
   const filteredReviews = reviews.filter((review) => {
@@ -22,6 +29,9 @@ function Szukaj() {
             <h3>{review.title}</h3>
             <p>Ocena: {review.rating}/10</p>
             <p>Opinia: {review.review}</p>
+            <button onClick={() => handleLike(index)}>
+              {likedReviews[index] ? 'Polubione' : 'Polub'}
+            </button>
             <hr />
           </li>
         ))}

@@ -1,10 +1,5 @@
 import { BrowserRouter, Switch, Route, Router, Routes, Link } from 'react-router-dom';
-import Opinie from './Opinie';
-import Szukaj from './Szukaj';
-import Konto from './Konto';
-import Layout from './layout';
-import Stopka from '../components/Stopka';
-
+import './CSS/Glowna.css'
 
 function Glowna() {
     return (
