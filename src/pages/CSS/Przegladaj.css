@@ -24,3 +24,12 @@
     border-radius: 5px;
 }
 
+.like{
+    border-radius: 5px;
+    background-color:chocolate;
+}
+
+.add{
+    border-radius: 5px;
+    background-color:rgb(236, 240, 35);
+}
